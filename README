@@ -1,0 +1,28 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4761
+
+Project Home: https://github.com/sk1418/HowMuch
+
+
+##Introduction
+`HowMuch` is a Vim plugin to calculate visual selected mathematical formulars (vim or bc expressions). It will add the result(or replace the selected expressions) in the current edit text. For details check next section: Features 
+
+##Features
+
+- Supports all visual selection modes (char-/line-/block-wise)
+- Supports two output formats: 
+    >> - append result with/out `=` after the expression 
+    >>- replace the selected expressions with result
+- Supports sum total result in line-(`V`) and block-wise (`Ctrl-V`)selection
+- You can create custom mapping to invoke `HowMuch`
+- *Evaluation "Engines"* (The expression evaluator)
+     >>- `HowMuch` supports `GNU bc`, `python` and `native vim` expressions evaluation engines,
+     >>- You can choose which engine should be used to evaluate current visual section.
+     >>- You can define the order of the engines, and let `HowMuch` do evaluation automatically. E.g. if `bc` fails, try `vim` again.
+     >>- You can add your own engines or modify the built-in engines. read documentation for details.
+
+**!Please read plugin documentation (HowMuch-config section) for options, mappings**
+
+##Examples & Screencasts
+
+Demo animation (gif) could be found at Project Home page(https://github.com/sk1418/HowMuch). The gif files were packed in the release archive as well.
+
